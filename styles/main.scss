@@ -1,0 +1,84 @@
+@import './variables.scss';
+@import './fonts.scss';
+@import './components/ui.scss';
+@import './components/layout.scss';
+@import './components/project-tree.scss';
+@import './components/project.scss';
+@import './components/file.scss';
+@import './components/art.scss';
+@import './components/sprites.scss';
+@import './components/mappings.scss';
+@import './components/palettes.scss';
+@import './components/import.scss';
+@import './components/rotsprite.scss';
+@import './components/documentation.scss';
+
+html {
+    user-select: none;
+    overflow: hidden;
+    cursor: default;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+body {
+    margin: 0;
+    background-color: $black;
+    color: $white;
+    font-size: 14px;
+    font-family: Hack Regular;
+}
+
+a {
+    color: $blue;
+    cursor: default;
+}
+
+.nuke {
+    opacity: 0.5;
+    transform: scale(1.9);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45vw;
+    z-index: -1;
+}
+
+canvas {
+    image-rendering: pixelated;
+}
+
+.canvas-debug {
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255,0,0,0.5);
+}
+
+::-webkit-scrollbar {
+    &:vertical {
+        width: $scrollbarWidth;
+    }
+    &:horizontal {
+        height: $scrollbarWidth;
+    }
+    background-color: $black;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $grey;
+}
+::-webkit-scrollbar-corner {
+    background-color: $black;
+}
+::-webkit-scrollbar-resizer {
+    display: none;
+}

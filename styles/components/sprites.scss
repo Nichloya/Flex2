@@ -1,0 +1,60 @@
+.spriteList {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.spriteSortContainer {
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    flex-grow: 1;
+    padding: 5px 0;
+}
+
+.sprites {
+    position: relative;
+
+    .bbox {
+        position: absolute;
+    }
+}
+
+.sprite {
+    position: relative;
+    height: $baseSize;
+    width: $baseSize;
+    margin: $margin;
+    overflow: hidden;
+
+    .mapping {
+        margin-left: $baseSize / 2;
+        margin-top: $baseSize / 2;
+    }
+
+    &:after {
+        content: '';
+        margin: auto;
+    }
+
+    .index {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        font-size: 10px;
+    }
+
+    .blank {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+}
+
+.sortable-float-sprite {
+    z-index: $z-float;
+}

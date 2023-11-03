@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "target": "esnext",
+        "baseUrl": "./",
+        "paths": {
+            "#store/*": ["./app/store/*"],
+            "#components/*": ["./app/components/*"],
+            "#controls/*": ["./app/controls/*"],
+            "#ui/*": ["./app/components/ui/*"],
+            "#util/*": ["./app/util*"],
+            "#lib/*": ["./app/lib*"],
+            "#formats/*": ["./app/formats*"],
+            "#styles/*": ["./styles*"]
+        }
+    },
+    "include": [
+        "app/**/*"
+    ],
+    "exclude": ["node_modules"]
+}

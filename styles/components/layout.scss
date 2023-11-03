@@ -1,0 +1,100 @@
+@import 'node_modules/flexlayout-react/style/dark.scss';
+
+.flexlayout__panel {
+    height: 100%;
+}
+
+.flexlayout__panel_maximized {
+    background-color: $black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 20px;
+    bottom: 0;
+
+    height: calc(100% - 20px);
+    overflow: auto;
+}
+
+.flexlayout__splitter {
+    background-color: $grey;
+    opacity: 0.2;
+}
+
+.flexlayout__splitter:hover {
+    opacity: 0.5;
+}
+
+.flexlayout__splitter_drag {
+    background-color: $grey;
+}
+
+.flexlayout__outline_rect {
+    border: 2px solid $blue;
+}
+
+.flexlayout__outline_rect_edge {
+    border-radius: initial;
+    border: 2px solid $magenta;
+}
+
+.flexlayout__edge_rect {
+    background-color: $white2;
+}
+
+.flexlayout__drag_rect {
+    background-color: $white2;
+}
+
+.flexlayout__border_button_overflow_top,
+.flexlayout__border_button_overflow_bottom,
+.flexlayout__border_button_overflow_right,
+.flexlayout__border_button_overflow_left,
+.flexlayout__border_button,
+.flexlayout__popup_menu,
+.flexlayout__tab_toolbar,
+.flexlayout__tab_button_overflow,
+.flexlayout__tab_button,
+.flexlayout__tabset_header,
+.flexlayout__drag_rect {
+    font-family: Hack,
+}
+
+.flexlayout__tabset_header_outer,
+.flexlayout__tabset-selected {
+    background: darken($black, 12%);
+}
+.flexlayout__tab_button {
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.flexlayout__tab,
+.flexlayout__tabset {
+    background: none;
+}
+
+.flexlayout__tab {
+    color: inherit;
+}
+
+.flexlayout__tab_button {
+    cursor: initial;
+    font-size: 13px;
+    padding: 0 8px;
+}
+
+.flexlayout__tab_button_content {
+    font-size: 13px;
+}
+
+.flexlayout__tab_button--selected,
+.flexlayout__tab_button--selected:hover {
+    color: $white;
+    background-color: $black;
+}
+
+.flexlayout__tab_button--unselected,
+.flexlayout__tab_button--unselected:hover {
+    color: $grey;
+    background-color: darken($black, 4%);
+}

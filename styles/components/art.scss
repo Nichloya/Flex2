@@ -1,0 +1,31 @@
+.tile-nodata {
+    background-color: $red;
+    opacity: .3;
+}
+
+.art {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.tile-container {
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    flex-grow: 1;
+    .tile-list {
+        margin: 10px 0;
+        position: relative;
+    }
+}
+
+.active-selection {
+    z-index: 1;
+    pointer-events: none;
+    position: relative;
+    margin-top: -5px;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+}

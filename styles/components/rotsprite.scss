@@ -1,0 +1,39 @@
+.rotsprite {
+    padding: 20px;
+    canvas {
+        background-image: url(../images/t.png);
+        border: 3px solid $grey;
+        width: 400px;
+        height: 400px;
+        margin: 10px 0;
+    }
+    .Dropdown-menu, .Dropdown-placeholder {
+        width: 90px;
+        text-align: center;
+    }
+
+    .angles {
+        margin: 10px 0;
+        margin-top: 0;
+        .numbers {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .ui-input {
+            display: inline;
+        }
+        .ui-input input, .button {
+            text-align: center;
+            width: 30px;
+            margin: 0;
+        }
+    }
+
+    .actions {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        margin-bottom: 0;
+    }
+}

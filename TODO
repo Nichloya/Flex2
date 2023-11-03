@@ -1,0 +1,56 @@
+// formats to support
+
+// crackers
+// kid chameleon
+    // go back to qiuu with questions
+// chaotix
+// s3k sonic saving
+// ristar
+// github issues
+/* https://raw.githubusercontent.com/Dandaman955/Streets-of-Rage-1-Disassembly-Redux/master/SoR.asm */
+/* http://info.sonicretro.org/Disassemblies */
+
+
+macros for mappings
+    perf
+    autoload mapping label if blank
+
+metadata for mappings
+
+redo tile rendering
+remove rotsprite
+
+ROADMAP
+
+drawing mode bugs
+    disable mapping editing
+improve undo/redo when drawing pixels / moving things
+animation editor
+    export to gif
+
+==
+BUGS
+
+TODO: load / save / load broken in sonic CD
+pink surrounding tiles sometimes breaks
+
+FEATURES
+set colour of art tiles
+ctrl+wheel for horiz scroll
+==
+select multiple sprites at once to reorder
+copy / paste mappings
+time travel for undo/redo
+import palette from spritesheet https://yarnpkg.com/en/package/node-vibrant
+
+
+22:04 <+dIRCord> <M​ainMemory> > Art is easy ␤> Each byte encodes one pixel, both nybbles have the color index ␤> And then each column is stored all in one go, no breaking into tiles ␤> In other words, it's pretty much a headerless 8bpp bitmap ␤> I think the color index is duplicated over both nybbles for speed, but I never looked at the algorithm
+21:08 <+dIRCord> <R​andomName> Not this. For example look at ArtScaled_EggRoboFly, which is art that's used by s3k art scaler. It's uncompressed art,tho it looks transformed in some way, but not like random mess of pixels.
+uses a grayscale copy of another frame that you selected separately from the current one as a "background" frame.
+drawing mode fill !
+S - scroll to sprite
+04:43:53 <%Lil-G> i mean so when you do "delete unused tiles" it doesn't delete the tiles the other object uses
+backdrop-filter
+Support MainMemory's macros formats
+<Hitaxas> There is also a glitch where Flex will sometimes destroy mappings when saving. Unsure the cause, but this has happened to me twice in the past month. https://cdn.discordapp.com/attachments/718373949368696892/731396915052412958/unknown.png
+==

@@ -1,0 +1,86 @@
+.paletteWrap {
+    height: 100%;
+}
+.palettes {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .index {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        font-family: Hack Bold;
+        cursor: ns-resize;
+    }
+
+    &.vert .index {
+        cursor: ew-resize;
+    }
+
+    .line {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+    }
+
+    .color {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .picker {
+        opacity: 0;
+
+
+        // position: absolute;
+    }
+
+    &.vert {
+        flex-direction: row;
+
+        .line {
+            flex-direction: column;
+        }
+    }
+}
+.palette-color-picker {
+    position: absolute;
+    z-index: $z-float;
+}
+
+.sortable-float-palette {
+    display: flex;
+    flex-direction: row;
+    z-index: $z-float;
+    .color {
+        flex-grow: 1;
+    }
+    .index {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        font-family: Hack Bold;
+    }
+
+    // inline override; should be harmless for palettes
+    pointer-events: auto !important;
+
+    cursor: ns-resize;
+    &-vert {
+        cursor: ew-resize;
+    }
+}
+
+.sortable-float-palette-vert {
+    @extend .sortable-float-palette;
+    flex-direction: column;
+}
+
+.color-picker {
+    display: inline-block;
+    z-index: $z-float;
+}
