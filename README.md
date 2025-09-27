@@ -1,12 +1,8 @@
-<div align="center">
-    <img src="development/flex2.png" alt="flex 2">
-    <br>
-</div>
-<br>
+# FLEX 2 WITH KOSINSKI PLUS M SUPPORT!
 
-Flex 2 is a sprite editor for the Sega Megadrive
+I added KosinskiPlusM support specifically for [S.C.E.](https://github.com/TheBlad768/Sonic-Clean-Engine-S.C.E.-) and [S1S3](https://github.com/TheBlad768/Sonic-1-in-Sonic-3-S.C.E.-).
 
-# [download](https://github.com/kirjavascript/Flex2/releases)
+# [download](https://github.com/Nichloya/Flex2/releases)
 
 [//]: # (__docs__)
 
