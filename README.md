@@ -1,6 +1,8 @@
 # FLEX 2 WITH KOSINSKI PLUS M SUPPORT!
 
-I added KosinskiPlusM support specifically for [S.C.E.](https://github.com/TheBlad768/Sonic-Clean-Engine-S.C.E.-) and [S1S3](https://github.com/TheBlad768/Sonic-1-in-Sonic-3-S.C.E.-).
+I added KosinskiPlusМ (module) support specifically for [Sonic-Clean-Engine-S.C.E.-](https://github.com/TheBlad768/Sonic-Clean-Engine-S.C.E.-), [Sonic-Clean-Engine-S.C.E.-Extended-](https://github.com/TheBlad768/Sonic-Clean-Engine-S.C.E.-Extended-)  and [Sonic-1-in-Sonic-3-S.C.E.-](https://github.com/TheBlad768/Sonic-1-in-Sonic-3-S.C.E.-). 😄
+
+
 
 # [download](https://github.com/Nichloya/Flex2/releases)
 
